@@ -20,14 +20,25 @@ export const UserList = (props: UserListPropsType) => {
     <div id={'hw01-users'}>
       <h1>userList</h1>
       <ul>
-        {props.users.map((user) => (
-            <li key={user.id} id={`hw01-users-${user.id}`}>
-              <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
-              {user.address.street}, {user.address.city}
-            </li>
+        {props.users.map((user) => ( // ВСЕ ТОВАРЫ В СТРАНУ ПРИЕЗЖАЮТ В КОНТЕЙНЕРАХ, А В РЕАКТЕ...
+          <li key={user.id} id={`hw01 - user - ${user.id}`}>
+        <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
+        {user.address.street}, {user.address.city}
+      </li>
         ))}
-      </ul>
+    </ul>
+
+        {/* <ul>
+          {props.users.map((user) => (
+              <li key={user.id} id={`hw01-users-${user.id}`}>
+                <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
+                {user.address.street}, {user.address.city}
+              </li>
+          ))}
+      </ul> */}
     </div>
+
+    
 
   );
 };
