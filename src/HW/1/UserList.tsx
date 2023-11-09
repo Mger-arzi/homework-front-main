@@ -7,7 +7,7 @@ type UserType = {
   id: number
   name: string
   age: number
-  address: Array<AddressType>
+  address: AddressType
 };
 
 type UserListPropsType = {
