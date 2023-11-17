@@ -1,19 +1,8 @@
 import { UserType } from './HW2';
 
 
-type AddessType_2 = {
-  street: string
-  city: string
-}
-
-type UserList_2Type = {
-  id: number
-  name: string
-  age: number
-  address: AddessType_2
-};
 type CurrentUserPropsType = {
-  user: UserList_2Type // пропиши типизацию
+  user: UserType                           // пропиши типизацию
 };
 
 
